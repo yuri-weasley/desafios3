@@ -13,6 +13,10 @@ public class Produto {
         return nome;
     }
 
+    public double getPreco() {
+        return preco;
+    }
+
     @Override
     public String toString() {
         return this.nome;
