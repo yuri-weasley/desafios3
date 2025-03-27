@@ -1,6 +1,7 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Principal {
@@ -108,15 +109,40 @@ public class Principal {
         Collections.sort(inteiros);
         System.out.println("Lista ordenada: " + inteiros);
          */
-        Titulo titulo1 = new Titulo();
-        Titulo titulo2 = new Titulo();
-        Titulo titulo3 = new Titulo();
+        /*
+        ArrayList<Titulo> listaDeTitulos = new ArrayList<>();
+        listaDeTitulos.add(new Titulo("D"));
+        listaDeTitulos.add(new Titulo("B"));
+        listaDeTitulos.add(new Titulo("A"));
 
-        List<Titulo> objts_titulo = new ArrayList<>();
-        objts_titulo.add(titulo1);
-        objts_titulo.add(titulo2);
-        objts_titulo.add(titulo3);
-        Collections.sort(objts_titulo);
-        System.out.println(objts_titulo);
+        Collections.sort(listaDeTitulos);
+
+        for (Titulo titulo : listaDeTitulos) {
+            System.out.println(titulo.nome);
+        }
+        */
+        /*
+        List<String> listaArrayList = new ArrayList<>();
+        listaArrayList.add("Elemento 1");
+        listaArrayList.add("Elemento 2");
+
+        List<String> listaLinkedList = new LinkedList<>();
+        listaLinkedList.add("Elemento A");
+        listaLinkedList.add("Elemento B");
+
+        System.out.println("ArrayList: " + listaArrayList);
+        System.out.println("LinkedList: " + listaLinkedList);
+        */
+        List<String> listaPolimorfica;
+
+        listaPolimorfica = new ArrayList<>();
+        listaPolimorfica.add("Elemento 1");
+        listaPolimorfica.add("Elemento 2");
+        System.out.println("ArrayList: " + listaPolimorfica);
+
+        listaPolimorfica = new LinkedList<>();
+        listaPolimorfica.add("Elemento A");
+        listaPolimorfica.add("Elemento B");
+        System.out.println("LinkedList: " + listaPolimorfica);
     }
 }
