@@ -1,5 +1,7 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Principal {
     public static void main(String[] args) {
@@ -67,6 +69,7 @@ public class Principal {
         }
         */
 
+        /*
         ContaBancaria c1 = new ContaBancaria();
         c1.setNumeroConta(1002025001);
         c1.setSaldo(2500);
@@ -96,5 +99,24 @@ public class Principal {
             }
         }
         System.out.println("A conta com maior saldo é a: " + contaMaiorSaldo.getNumeroConta() + ", com: " + contaMaiorSaldo.getSaldo());
+         */
+        /*
+        List<Integer> inteiros = new ArrayList<>();
+        inteiros.add(4);
+        inteiros.add(5);
+        inteiros.add(7);
+        Collections.sort(inteiros);
+        System.out.println("Lista ordenada: " + inteiros);
+         */
+        Titulo titulo1 = new Titulo();
+        Titulo titulo2 = new Titulo();
+        Titulo titulo3 = new Titulo();
+
+        List<Titulo> objts_titulo = new ArrayList<>();
+        objts_titulo.add(titulo1);
+        objts_titulo.add(titulo2);
+        objts_titulo.add(titulo3);
+        Collections.sort(objts_titulo);
+        System.out.println(objts_titulo);
     }
 }
